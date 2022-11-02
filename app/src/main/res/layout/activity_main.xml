@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lytContenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="272dp" />
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:autoText="false"
+        android:text="@string/nombre"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        app:autoSizeMaxTextSize="300dp"
+        app:autoSizeMinTextSize="300dp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/aceptar"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:text="@string/aceptar" />
+
+</LinearLayout>
